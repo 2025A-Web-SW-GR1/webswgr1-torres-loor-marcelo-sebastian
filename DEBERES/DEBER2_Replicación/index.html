@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replica de Stake.com</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"  rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+<body class="bg-dark text-light">
+    <!-- Sidebar -->
+    <div class="d-flex">
+        <nav id="sidebarMenu" class="d-lg-block bg-dark sidebar collapse min-vh-100 shadow-sm" style="width: 240px;">
+            <div class="position-sticky">
+                <ul class="nav flex-column pt-4">
+                    <li class="nav-item mb-2"><a class="nav-link text-warning fw-bold" href="#promociones">🎁 Promociones</a></li>
+                    <li class="nav-item mb-2"><a class="nav-link text-warning" href="#">🤝 Afiliado</a></li>
+                    <li class="nav-item mb-2"><a class="nav-link text-warning" href="#">👑 Club VIP</a></li>
+                    <li class="nav-item mb-2"><a class="nav-link text-warning" href="#">📝 Blog</a></li>
+                    <li class="nav-item mb-2"><a class="nav-link text-warning" href="#">💬 Foro</a></li>
+                    <li class="nav-item mb-2"><a class="nav-link text-warning" href="#">🏆 Patrocinios</a></li>
+                    <li class="nav-item mb-2"><a class="nav-link text-warning" href="#">🛡️ Juego Responsable</a></li>
+                    <li class="nav-item mb-2"><a class="nav-link text-warning" href="#">🎧 Soporte en vivo</a></li>
+                    <li class="nav-item mb-2"><a class="nav-link text-warning" href="#">🌐 Idioma: Español</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="flex-grow-1">
+            <!-- Header -->
+            <header>
+                <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top shadow-sm" aria-label="Menú principal" style="z-index: 1050;">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler text-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img id="imgLogo" alt="Logo de Stake" width="60" class="img-fluid rounded">
+                        </a>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-warning" aria-current="page" href="#">Casino</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-warning" href="#">Deportes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link btn btn-outline-warning mx-2 px-3 py-1" href="#">Iniciar sesión</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link btn btn-warning text-dark px-3 py-1" href="#">Registrarse</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <main class="pt-5" style="min-height: 100vh;">
+                <!-- Hero Section -->
+                <section id="hero-section" class="bg-dark text-light p-5 mb-5 d-flex align-items-center justify-content-center" style="min-height: 60vh;">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+                                <h1 class="display-4">El casino con apuestas deportivas más grande del mundo</h1>
+                                <a href="#" class="btn btn-warning btn-lg mt-3 px-5 py-2 fw-bold shadow">Regístrate</a>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <img id="imgCasinoBanner" alt="Banner promocional del casino" class="img-fluid rounded shadow">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Juegos en tendencia -->
+                <section id="juegos-tendencia" class="py-5 bg-light mb-5">
+                    <div class="container">
+                        <h2 class="text-center mb-4 text-dark">Juegos en tendencia</h2>
+                        <div class="row row-cols-1 row-cols-md-5 g-4">
+                            <div class="col">
+                                <div class="card h-100 transition shadow-sm hover-shadow-lg">
+                                    <img id="imgSweetBonanza" class="card-img-top img-fluid rounded" alt="Juego Sweet Bonanza">
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <h5 class="card-title">Sweet Bonanza</h5>
+                                        <p class="card-text">1504 jugando</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 transition shadow-sm hover-shadow-lg">
+                                    <img id="imgFlightMode" class="card-img-top img-fluid rounded" alt="Juego Flight Mode">
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <h5 class="card-title">Flight Mode</h5>
+                                        <p class="card-text">299 jugando</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 transition shadow-sm hover-shadow-lg">
+                                    <img id="imgUltimateSlot" class="card-img-top img-fluid rounded" alt="Ultimate Slot of America">
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <h5 class="card-title">Ultimate Slot of America</h5>
+                                        <p class="card-text">3133 jugando</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 transition shadow-sm hover-shadow-lg">
+                                    <img id="imgHexAppeal" class="card-img-top img-fluid rounded" alt="Hex Appeal">
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <h5 class="card-title">Hex Appeal</h5>
+                                        <p class="card-text">68 jugando</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 transition shadow-sm hover-shadow-lg">
+                                    <img id="imgFireInTheHole" class="card-img-top img-fluid rounded" alt="Fire in the Hole 3">
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <h5 class="card-title">Fire in the Hole 3</h5>
+                                        <p class="card-text">211 jugando</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Deportes en tendencia -->
+                <section id="deportes-tendencia" class="py-5 mb-5 bg-dark">
+                    <div class="container">
+                        <h2 class="text-center mb-4 text-warning">Deportes en tendencia</h2>
+                        <div class="row row-cols-1 row-cols-md-5 g-4">
+                            <div class="col">
+                                <div class="card h-100 transition shadow-sm hover-shadow-lg bg-secondary text-light">
+                                    <img id="imgFutbol" class="card-img-top img-fluid rounded" alt="Deporte Fútbol">
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <h5 class="card-title">Fútbol</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 transition shadow-sm hover-shadow-lg bg-secondary text-light">
+                                    <img id="imgBaloncesto" class="card-img-top img-fluid rounded" alt="Deporte Baloncesto">
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <h5 class="card-title">Baloncesto</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 transition shadow-sm hover-shadow-lg bg-secondary text-light">
+                                    <img id="imgTenis" class="card-img-top img-fluid rounded" alt="Deporte Tenis">
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <h5 class="card-title">Tenis</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 transition shadow-sm hover-shadow-lg bg-secondary text-light">
+                                    <img id="imgBeisbol" class="card-img-top img-fluid rounded" alt="Deporte Béisbol">
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <h5 class="card-title">Béisbol</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 transition shadow-sm hover-shadow-lg bg-secondary text-light">
+                                    <img id="imgMMA" class="card-img-top img-fluid rounded" alt="Deporte MMA">
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <h5 class="card-title">MMA</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Promociones -->
+                <section id="promociones" class="py-5 bg-dark text-light mb-5">
+                    <div class="container">
+                        <h2 class="text-center mb-4 text-warning">Promociones</h2>
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card h-100 transition shadow-sm hover-shadow-lg bg-secondary text-light">
+                                    <img id="imgPromo1" class="card-img-top img-fluid rounded" alt="Promoción sorteo de $75,000">
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <h5 class="card-title">Sorteo de $75,000</h5>
+                                        <p class="card-text">Todos los días en Stake. ¡La casa nunca gana, lo prometemos!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 transition shadow-sm hover-shadow-lg bg-secondary text-light">
+                                    <img id="imgPromo2" class="card-img-top img-fluid rounded" alt="Promoción Copa Mundial de Clubes">
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <h5 class="card-title">Copa Mundial de Clubes</h5>
+                                        <p class="card-text">Pago en la primera mitad. ¡Apostar es la mejor inversión!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 transition shadow-sm hover-shadow-lg bg-secondary text-light">
+                                    <img id="imgPromo3" class="card-img-top img-fluid rounded" alt="Promoción BLAST.tv Austin Major">
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <h5 class="card-title">BLAST.tv Austin Major</h5>
+                                        <p class="card-text">$40,000 SGM bolsa de premios. ¡Aquí todos ganan, menos la casa!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Tabla de apuestas recientes -->
+                <section id="apuestas-recientes" class="py-5 bg-light mb-5">
+                    <div class="container">
+                        <h2 class="text-center mb-4 text-dark">Apuestas recientes</h2>
+                        <div class="table-responsive">
+                            <table class="table table-dark table-striped table-hover rounded shadow">
+                                <thead>
+                                    <tr>
+                                        <th>Evento</th>
+                                        <th>Usuario</th>
+                                        <th>Hora</th>
+                                        <th>Cuotas</th>
+                                        <th>Monto de Apuesta</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Dinamarca - Francia</td>
+                                        <td>Oculto</td>
+                                        <td>21:34</td>
+                                        <td>1.73</td>
+                                        <td>₿90,000.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Los Angeles Angels - Houston</td>
+                                        <td>Oculto</td>
+                                        <td>21:34</td>
+                                        <td>1.02</td>
+                                        <td>$2,323.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mile A Minute</td>
+                                        <td>Oculto</td>
+                                        <td>21:34</td>
+                                        <td>1.45</td>
+                                        <td>$2,001.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Los Angeles Dodgers - Washington</td>
+                                        <td>Oculto</td>
+                                        <td>21:33</td>
+                                        <td>1.40</td>
+                                        <td>CA$2,000.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Colorado Rockies - Arizona</td>
+                                        <td>Oculto</td>
+                                        <td>21:32</td>
+                                        <td>4.90</td>
+                                        <td>$1,021.45</td>
+                                    </tr>
+                                    <tr>
+                                        <td>FIFA Copa Mundial De Clubes</td>
+                                        <td>Oculto</td>
+                                        <td>21:33</td>
+                                        <td>7.00</td>
+                                        <td>$1,141.03</td>
+                                    </tr>
+                                    <tr>
+                                        <td>River Plate - CF Monterrey</td>
+                                        <td>Oculto</td>
+                                        <td>21:32</td>
+                                        <td>1.80</td>
+                                        <td>CA$2,000.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+                <!-- Preguntas frecuentes irónicas -->
+                <section id="faq" class="py-5 mb-5">
+                    <div class="container">
+                        <h2 class="text-center mb-4 text-warning">¿Tienes Más Preguntas?</h2>
+                        <div class="accordion accordion-flush rounded-3 overflow-hidden" id="faqAccordion">
+                            <div class="accordion-item bg-light border-0">
+                                <h2 class="accordion-header" id="heading1">
+                                    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                        ¿Quién gana realmente?
+                                    </button>
+                                </h2>
+                                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        ¡Claro, tú siempre ganas! Ojalá fuera tan fácil... pero recuerda, la casa nunca gana, solo se lleva una pequeña comisión (o dos).
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-light border-0">
+                                <h2 class="accordion-header" id="heading2">
+                                    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        ¿Stake tiene licencia?
+                                    </button>
+                                </h2>
+                                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Por supuesto, tenemos más licencias que un supermercado. ¡Apostar aquí es tan seguro como cruzar la calle con los ojos cerrados!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-light border-0">
+                                <h2 class="accordion-header" id="heading3">
+                                    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                        ¿Es seguro apostar en Stake?
+                                    </button>
+                                </h2>
+                                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Apostar es tan seguro como guardar tus ahorros bajo el colchón... ¡pero aquí al menos te damos luces de neón y emoción!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-light border-0">
+                                <h2 class="accordion-header" id="heading4">
+                                    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                        ¿Con qué divisas puedo apostar?
+                                    </button>
+                                </h2>
+                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        ¡Con todas! Criptomonedas, billetes del Monopoly, puntos de Hogwarts... lo que tengas a mano.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-light border-0">
+                                <h2 class="accordion-header" id="heading5">
+                                    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                        ¿A qué tipo de juegos de casino puedo jugar?
+                                    </button>
+                                </h2>
+                                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        A todos los que te hagan sentir que vas a ganar... hasta que la casa te recuerde que solo es un juego.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-light border-0">
+                                <h2 class="accordion-header" id="heading6">
+                                    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                        ¿En qué deportes puedo apostar?
+                                    </button>
+                                </h2>
+                                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        En todos, incluso en quién se tropieza primero en la oficina. ¡La emoción nunca termina!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-light border-0">
+                                <h2 class="accordion-header" id="heading7">
+                                    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                        ¿Cómo puedo ver las retransmisiones en directo?
+                                    </button>
+                                </h2>
+                                <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Fácil: solo apuesta, y la emoción será tan grande que ni querrás ver el partido.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-- Footer -->
+            <footer class="bg-dark text-light py-5 mt-5 border-top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+                            <img id="imgLogoFooter" alt="Logo de Stake en el pie de página" width="60" class="img-fluid rounded mb-2">
+                            <p class="small mt-2 mb-0">© 2025 Stake.com | Todos los Derechos Reservados.</p>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="row text-center text-md-start">
+                                <div class="col-12 col-md-3 mb-3 mb-md-0">
+                                    <h6>Casino</h6>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="text-light">Juegos de casino</a></li>
+                                        <li><a href="#" class="text-light">Slots</a></li>
+                                        <li><a href="#" class="text-light">Roulette</a></li>
+                                        <li><a href="#" class="text-light">Blackjack</a></li>
+                                        <li><a href="#" class="text-light">eSports</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-3 mb-3 mb-md-0">
+                                    <h6>Deportes</h6>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="text-light">Apuestas deportivas</a></li>
+                                        <li><a href="#" class="text-light">Deportes en vivo</a></li>
+                                        <li><a href="#" class="text-light">Fútbol</a></li>
+                                        <li><a href="#" class="text-light">Tenis</a></li>
+                                        <li><a href="#" class="text-light">Reglas de deportes</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-3 mb-3 mb-md-0">
+                                    <h6>Soporte</h6>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="text-light">Centro de ayuda</a></li>
+                                        <li><a href="#" class="text-light">Verificación</a></li>
+                                        <li><a href="#" class="text-light">Soporte en vivo</a></li>
+                                        <li><a href="#" class="text-light">Autoclausión</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <h6>Sobre Nosotros</h6>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="text-light">Club VIP</a></li>
+                                        <li><a href="#" class="text-light">Afiliado</a></li>
+                                        <li><a href="#" class="text-light">Política Anti-Lavado</a></li>
+                                        <li><a href="#" class="text-light">Términos y Condiciones</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col text-center">
+                                    <img id="imgCryptoLogos" alt="Criptomonedas aceptadas" class="img-fluid" style="max-height: 40px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col text-center small">
+                            Stake está comprometido con el juego responsable. Para más información visita <a href="#" class="text-warning">Gamblingtherapy.org</a>.<br>
+                            Stake es operado por Medium Rare N.V. con número de registro 145353 y dirección registrada Seru Loraweg 7 B, Curacao. Para Paraguay los juegos de la modalidad de juego de azar denominada Casino Online están disponibles en la página web Stake.la y son explotados por CELEXPAR S.R.L. conforme a la Resolución CONAJZAR número 14/2020, con fecha 28 de abril de 2020. CELEXPAR S.R.L. es responsable del pago de premios en Paraguay. Contáctanos a support@stake.com. La empresa agente de pagos es Medium Rare Limited con dirección 7.9 Riga Feraiou, LIZANTIA COURT, Office 310, Agioi Omologites, 1087 Nicosia, Cyprus y Número de Registro: HE 410775
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!-- Bootstrap JS (opcional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
+    <script src="assets/imagenes.js"></script>
+    <script>
+      // Juegos en tendencia
+      document.getElementById('imgSweetBonanza').src = imagenes.sweetBonanza;
+      document.getElementById('imgFlightMode').src = imagenes.flightMode;
+      document.getElementById('imgUltimateSlot').src = imagenes.ultimateSlot;
+      document.getElementById('imgHexAppeal').src = imagenes.hexAppeal;
+      document.getElementById('imgFireInTheHole').src = imagenes.fireInTheHole;
+      // Deportes en tendencia
+      document.getElementById('imgFutbol').src = imagenes.futbol;
+      document.getElementById('imgBaloncesto').src = imagenes.baloncesto;
+      document.getElementById('imgTenis').src = imagenes.tenis;
+      document.getElementById('imgBeisbol').src = imagenes.beisbol;
+      document.getElementById('imgMMA').src = imagenes.mma;
+      // Promociones
+      document.getElementById('imgPromo1').src = imagenes.promo1;
+      document.getElementById('imgPromo2').src = imagenes.promo2;
+      document.getElementById('imgPromo3').src = imagenes.promo3;
+      // Banner y logos
+      document.getElementById('imgCasinoBanner').src = imagenes.casinoBanner;
+      document.getElementById('imgLogo').src = imagenes.logo;
+      document.getElementById('imgLogoFooter').src = imagenes.logoFooter;
+      document.getElementById('imgCryptoLogos').src = imagenes.cryptoLogos;
+    </script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+/* General */
+body {
+    font-family: 'Visby', 'Open Sans', 'Helvetica Neue', Helvetica, 'Futura', Arial, sans-serif !important;
+    background-color: #202c3c !important;
+    color: #fff !important;
+}
+
+/* Navbar, Sidebar y Footer */
+.navbar, .navbar-collapse, .navbar-nav, .navbar-brand, #sidebarMenu, footer {
+    background-color: #202c3c !important;
+    color: #fff !important;
+}
+
+/* Hero Section y secciones oscuras */
+.bg-dark, .section-dark {
+    background-color: #202c3c !important;
+    color: #fff !important;
+}
+
+/* Cards */
+.card {
+    border: none;
+    background-color: #0d2233 !important;
+    color: #fff !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+.card:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    transform: translateY(-5px) scale(1.03);
+}
+
+/* Accordion */
+.accordion-button {
+    color: #fff !important;
+    background-color: #081c2c !important;
+    border-radius: 0.5rem;
+}
+.accordion-item {
+    background-color: #0d2233 !important;
+    color: #fff !important;
+}
+
+/* Secciones claras (antes bg-light) */
+.bg-light, .section-light {
+    background-color: #202c3c !important;
+    color: #fff !important;
+}
+
+/* Títulos destacados */
+h2, h5, h6 {
+    color: #fff !important;
+}
+
+/* Sidebar */
+#sidebarMenu {
+    background-color: #081c2c !important;
+    color: #fff !important;
+    border-right: 1px solid #0d2233;
+}
+
+/* Botones personalizados */
+.btn-warning, .btn-outline-warning {
+    color: #081c2c !important;
+    background-color: #fff !important;
+    border-color: #fff !important;
+}
+.btn-outline-warning {
+    background-color: transparent !important;
+    color: #fff !important;
+}
+.btn-warning:hover, .btn-outline-warning:hover {
+    background-color: #eaeaea !important;
+    color: #081c2c !important;
+}
+
+/* Links */
+a, .nav-link, .text-warning {
+    color: #fff !important;
+}
+
+/* Botón Registrarse especial */
+.navbar .btn.btn-warning.text-dark {
+    background-color: #1874e4 !important;
+    color: #fff !important;
+    border: none !important;
+}
+.navbar .btn.btn-warning.text-dark:hover {
+    background-color: #125bb3 !important;
+    color: #fff !important;
+}
+
+/* Título Juegos en tendencia blanco */
+#juegos-tendencia h2 {
+    color: #fff !important;
+}
+
+/* Tipografía similar a Stake.com */
+body, .navbar, .card, .accordion, h1, h2, h5, h6, .btn {
+    font-family: 'Visby', 'Open Sans', 'Helvetica Neue', Helvetica, 'Futura', Arial, sans-serif !important;
+}
+
+/* Tabla de apuestas recientes */
+#apuestas-recientes h2 {
+    color: #fff !important;
+}
+#apuestas-recientes .table {
+    background-color: #202c3c !important;
+    color: #fff !important;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+#apuestas-recientes .table thead th {
+    background-color: #202c3c !important;
+    color: #fff !important;
+    border-bottom: 2px solid #1874e4 !important;
+}
+#apuestas-recientes .table-striped > tbody > tr {
+    background-color: #202c3c !important;
+}
+#apuestas-recientes .table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #202c3c !important;
+}
+#apuestas-recientes .table-striped > tbody > tr:nth-of-type(even) {
+    background-color: #202c3c !important;
+}
+#apuestas-recientes .table-hover tbody tr:hover {
+    background-color: #1874e4 !important;
+    color: #fff !important;
+}
+#apuestas-recientes .table td, #apuestas-recientes .table th {
+    color: #fff !important;
+    border-color: #202c3c !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
