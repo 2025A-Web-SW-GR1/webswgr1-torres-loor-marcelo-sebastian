@@ -8,17 +8,16 @@ export class AuthController {
 
   // Mostrar formulario de login
   @Get('login')
-  @Render('login')
-  mostrarLogin(@Session() session: Record<string, any>) {
+  mostrarLogin(@Session() session: Record<string, any>, @Res() res: Response) {
     // Si ya está autenticado, redirigir a la tabla
     if (session.usuario) {
-      return { redirect: '/casa/tabla' };
+      return res.redirect('/casa/tabla');
     }
     
-    return {
+    return res.render('login', {
       titulo: 'Login - Examen',
       error: null
-    };
+    });
   }
 
   // Procesar login
